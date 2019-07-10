@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: demo
+
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1/test?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+#    username: root
+#    password: root
+
+  datasource0:
+        driver-class-name: com.mysql.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
+        druid:
+            url: jdbc:mysql://127.0.0.1/test?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+            username: root
+            password: root
+  datasource1:
+        driver-class-name: com.mysql.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
+        druid:
+            url: jdbc:mysql://127.0.0.1/entity?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+            username: root
+            password: root
